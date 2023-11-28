@@ -10,3 +10,12 @@ C:\TestManager.aaa\TestManager\Common\obj\Debug\Common.csproj.AssemblyReference.
 C:\TestManager.aaa\TestManager\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\TestManager.aaa\TestManager\Common\obj\Debug\Common.dll
 C:\TestManager.aaa\TestManager\Common\obj\Debug\Common.pdb
+C:\Users\edison\Downloads\OnlyDll\Common\bin\Debug\Common.dll
+C:\Users\edison\Downloads\OnlyDll\Common\bin\Debug\Common.pdb
+C:\Users\edison\Downloads\OnlyDll\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\edison\Downloads\OnlyDll\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\edison\Downloads\OnlyDll\Common\obj\Debug\Common.dll
+C:\Users\edison\Downloads\OnlyDll\Common\obj\Debug\Common.pdb
+C:\Users\edison\Downloads\OnlyDll\Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\edison\Downloads\OnlyDll\Common\bin\Debug\Newtonsoft.Json.xml
+C:\Users\edison\Downloads\OnlyDll\Common\obj\Debug\Common.csproj.CopyComplete

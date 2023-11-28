@@ -8,6 +8,8 @@ using System.Management.Automation;             //手動加入參考
 using System.Management.Automation.Runspaces;   //手動加入參考
 using System.Threading;
 using System.Reflection;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace TestDll
 {

@@ -7,3 +7,12 @@ C:\TestManager\TestManager\Test3\bin\Debug\Common.pdb
 C:\TestManager\TestManager\Test3\obj\Debug\Test3.csproj.CopyComplete
 C:\TestManager\TestManager\Test3\obj\Debug\Test3.dll
 C:\TestManager\TestManager\Test3\obj\Debug\Test3.pdb
+C:\Users\edison\Downloads\OnlyDll\Test3\bin\Debug\Test3.dll
+C:\Users\edison\Downloads\OnlyDll\Test3\bin\Debug\Test3.pdb
+C:\Users\edison\Downloads\OnlyDll\Test3\bin\Debug\Common.dll
+C:\Users\edison\Downloads\OnlyDll\Test3\bin\Debug\Common.pdb
+C:\Users\edison\Downloads\OnlyDll\Test3\obj\Debug\Test3.csproj.AssemblyReference.cache
+C:\Users\edison\Downloads\OnlyDll\Test3\obj\Debug\Test3.csproj.CoreCompileInputs.cache
+C:\Users\edison\Downloads\OnlyDll\Test3\obj\Debug\Test3.csproj.CopyComplete
+C:\Users\edison\Downloads\OnlyDll\Test3\obj\Debug\Test3.dll
+C:\Users\edison\Downloads\OnlyDll\Test3\obj\Debug\Test3.pdb
