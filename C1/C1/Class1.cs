@@ -18,10 +18,10 @@ namespace C1
             //Console.WriteLine("SSSSSSSSSSSSSSSSSSSSSSSSSRR");
             return 1;
         }
-        public static int Setup()
+        public static int Setup(int a, string c)
         {
-            // Console.WriteLine(a.ToString() + "   "+ c);
-            // Console.ReadKey();
+            Console.WriteLine(a.ToString() + "   "+ c);
+            Console.ReadKey();
             return 1;
         }
 

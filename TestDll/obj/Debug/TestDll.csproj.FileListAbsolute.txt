@@ -11,10 +11,7 @@ C:\Users\edison\Downloads\OnlyDll\TestDll\obj\Debug\TestDll.csproj.CopyComplete
 C:\Users\ediso\Downloads\OnlyDll\TestDll\bin\Debug\TestDll.exe.config
 C:\Users\ediso\Downloads\OnlyDll\TestDll\bin\Debug\TestDll.exe
 C:\Users\ediso\Downloads\OnlyDll\TestDll\bin\Debug\TestDll.pdb
-C:\Users\ediso\Downloads\OnlyDll\TestDll\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ediso\Downloads\OnlyDll\TestDll\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ediso\Downloads\OnlyDll\TestDll\obj\Debug\TestDll.csproj.AssemblyReference.cache
 C:\Users\ediso\Downloads\OnlyDll\TestDll\obj\Debug\TestDll.csproj.CoreCompileInputs.cache
-C:\Users\ediso\Downloads\OnlyDll\TestDll\obj\Debug\TestDll.csproj.CopyComplete
 C:\Users\ediso\Downloads\OnlyDll\TestDll\obj\Debug\TestDll.exe
 C:\Users\ediso\Downloads\OnlyDll\TestDll\obj\Debug\TestDll.pdb

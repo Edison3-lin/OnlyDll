@@ -12,7 +12,7 @@ namespace Common
 {
     public class Runnner
     {
-        public static bool RunTestItem(string dllPath, object[] R)
+        public static bool RunTestItem(string dllPath, object[] S, object[] R)
         {
             Testflow.General.WriteLog("RunTestItem", dllPath);
             object myResult = null;
@@ -20,7 +20,7 @@ namespace Common
             var myTest=myDll.GetTypes().First(m=>!m.IsAbstract && m.IsClass);
             object myObj = myDll.CreateInstance(myTest.FullName);
             try
-            { myTest.GetMethod("Setup").Invoke(myObj, new object[]{}); }
+            { myTest.GetMethod("Setup").Invoke(myObj, S); }
             catch (Exception ex)
             { 
                 Console.WriteLine("Setup() Error!!! "+ex.Message); 

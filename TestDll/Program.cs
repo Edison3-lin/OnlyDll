@@ -8,8 +8,6 @@ using System.Management.Automation;             //手動加入參考
 using System.Management.Automation.Runspaces;   //手動加入參考
 using System.Threading;
 using System.Reflection;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace TestDll
 {
@@ -84,7 +82,7 @@ namespace TestDll
             }
 
             process_log(".... Loading "+dllPath+" ....");
-            Object[] p = new object[]{dllPath, new object[]{}};
+            Object[] p = new object[]{dllPath, new object[]{}, new object[]{}};
             var result = obj.Invoke("RunTestItem",p);
             // process_log("             Invoke .Setup()");
             // obj.Invoke("Setup", p);

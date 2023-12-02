@@ -34,7 +34,7 @@ namespace Test_Collection
                 // Run_Parameter = new object[] { 20, 30, "Edison" };
                 // UpdateResults_Parameter = new object[] { };
                 // TearDown_Parameter = new object[] { };
-                Common.Runnner.RunTestItem(currentDirectory+"C1.dll", new object[] { 20, 30, "Edison" });
+                Common.Runnner.RunTestItem(currentDirectory+"C1.dll", new object[] { 66, "Grace" }, new object[] { 20, 30, "Edison" });
             }
             catch (Exception ex)
             {
