@@ -8,14 +8,14 @@ namespace C1
 {
     public class Class1
     {
-        public static int TearDown()
+        public static int TearDown(char a, string b)
         {
-            //Console.WriteLine("SSSSSSSSSSSSSSSSSSSSSSSSSRR");
+            Console.WriteLine("SSSSSSSSSSSSSSS "+a+"   "+b);
             return 1;
         }
-        public static int UpdateResults()
+        public static int UpdateResults(string a, int b)
         {
-            //Console.WriteLine("SSSSSSSSSSSSSSSSSSSSSSSSSRR");
+            Console.WriteLine("TTTTTTTTTTTTTTTTT    "+a+"   "+b.ToString());
             return 1;
         }
         public static int Setup(int a, string c)

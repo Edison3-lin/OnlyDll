@@ -12,7 +12,7 @@ namespace Common
 {
     public class Runnner
     {
-        public static bool RunTestItem(string dllPath, object[] S, object[] R)
+        public static bool RunTestItem(string dllPath, object[] S, object[] R,  object[] U,  object[] T)
         {
             Testflow.General.WriteLog("RunTestItem", dllPath);
             object myResult = null;
@@ -39,7 +39,7 @@ namespace Common
 
             try            
             { 
-                myTest.GetMethod("UpdateResults").Invoke(myObj, new object[]{}); 
+                myTest.GetMethod("UpdateResults").Invoke(myObj, U); 
             }           
             catch (Exception ex)
             {
@@ -49,7 +49,7 @@ namespace Common
 
             try            
             { 
-                myTest.GetMethod("TearDown").Invoke(myObj, new object[]{}); 
+                myTest.GetMethod("TearDown").Invoke(myObj, T); 
             }
             catch (Exception ex)
             {

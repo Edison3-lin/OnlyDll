@@ -24,7 +24,6 @@ namespace Test_Collection
         public int Run()
         {
             // Testflow.Run(DllName);
-            Console.WriteLine("xxxxxxxxxxx");
             try
             {
                 // Common.Runnner.RunTestItem(currentDirectory+"TestItem1.dll");
@@ -34,7 +33,7 @@ namespace Test_Collection
                 // Run_Parameter = new object[] { 20, 30, "Edison" };
                 // UpdateResults_Parameter = new object[] { };
                 // TearDown_Parameter = new object[] { };
-                Common.Runnner.RunTestItem(currentDirectory+"C1.dll", new object[] { 66, "Grace" }, new object[] { 20, 30, "Edison" });
+                Common.Runnner.RunTestItem(currentDirectory+"C1.dll", new object[] { 22, "Grace" }, new object[] { 20, 30, "Edison" }, new object[]{"林淑芳", 77}, new object[]{'a', "林宏斌"});
             }
             catch (Exception ex)
             {

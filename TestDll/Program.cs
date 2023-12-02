@@ -82,7 +82,7 @@ namespace TestDll
             }
 
             process_log(".... Loading "+dllPath+" ....");
-            Object[] p = new object[]{dllPath, new object[]{}, new object[]{}};
+            Object[] p = new object[]{ dllPath, new object[]{}, new object[]{}, new object[]{}, new object[]{} };
             var result = obj.Invoke("RunTestItem",p);
             // process_log("             Invoke .Setup()");
             // obj.Invoke("Setup", p);
