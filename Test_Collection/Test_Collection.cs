@@ -16,7 +16,7 @@ namespace Test_Collection
        public int Setup()
         {
             // common.Setup
-            Console.WriteLine("collect setup~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("Test_collect setup @@@@@@@@@@@@@@@@");
 
             return 81;
         }
@@ -24,12 +24,17 @@ namespace Test_Collection
         public int Run()
         {
             // Testflow.Run(DllName);
-
+            Console.WriteLine("xxxxxxxxxxx");
             try
             {
-                Common.Runnner.RunTestItem(currentDirectory+"TestItem1.dll");
-                Common.Runnner.RunTestItem(currentDirectory+"Test3.dll");
-                Common.Runnner.RunTestItem(currentDirectory+"TestItem2.dll");
+                // Common.Runnner.RunTestItem(currentDirectory+"TestItem1.dll");
+                // Common.Runnner.RunTestItem(currentDirectory+"Test3.dll");
+                // Common.Runnner.RunTestItem(currentDirectory+"TestItem2.dll");
+                // Setup_Parameter = new object[] { 66, "Grace" };
+                // Run_Parameter = new object[] { 20, 30, "Edison" };
+                // UpdateResults_Parameter = new object[] { };
+                // TearDown_Parameter = new object[] { };
+                Common.Runnner.RunTestItem(currentDirectory+"C1.dll", new object[] { 20, 30, "Edison" });
             }
             catch (Exception ex)
             {

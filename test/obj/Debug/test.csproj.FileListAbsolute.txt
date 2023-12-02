@@ -1,0 +1,7 @@
+C:\Users\ediso\Downloads\OnlyDll\test\bin\Debug\test.exe.config
+C:\Users\ediso\Downloads\OnlyDll\test\bin\Debug\test.exe
+C:\Users\ediso\Downloads\OnlyDll\test\bin\Debug\test.pdb
+C:\Users\ediso\Downloads\OnlyDll\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\ediso\Downloads\OnlyDll\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\ediso\Downloads\OnlyDll\test\obj\Debug\test.exe
+C:\Users\ediso\Downloads\OnlyDll\test\obj\Debug\test.pdb

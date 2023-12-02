@@ -32,7 +32,10 @@ namespace TestDll
                 else
                 {
                     // 清空內容
-                    File.WriteAllText(filePath, string.Empty);
+                    using (FileStream fs = new FileStream(log_file, FileMode.OpenOrCreate, FileAccess.ReadWrite))
+                    {
+                        fs.SetLength(0);
+                    }                    
                 }
             }
             catch (Exception ex)
@@ -81,7 +84,7 @@ namespace TestDll
             }
 
             process_log(".... Loading "+dllPath+" ....");
-            Object[] p = new object[]{dllPath};
+            Object[] p = new object[]{dllPath, new object[]{}};
             var result = obj.Invoke("RunTestItem",p);
             // process_log("             Invoke .Setup()");
             // obj.Invoke("Setup", p);
@@ -123,6 +126,7 @@ namespace TestDll
 
             endTime = DateTime.Now;
             timeSpan = endTime - startTime;
+            Console.ReadKey();
             // 输出时间间隔
             process_log("執行花費時間: " + timeSpan.Minutes + "分鐘 " + timeSpan.Seconds + "秒");
             process_log("=================Completed================");

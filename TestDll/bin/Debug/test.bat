@@ -2,5 +2,5 @@
 powershell set-executionpolicy Bypass -scope CurrentUser
 powershell set-executionpolicy Bypass -scope process
 @REM powershell start-process c:\TestManager\TestManager.exe -WindowStyle Hidden -verb RunAs
-powershell start-process .\TestDll.exe -ArgumentList common_bios_pxeboot_default.dll -verb RunAs
+powershell start-process .\TestDll.exe -ArgumentList Test_Collection.dll -verb RunAs
 exit

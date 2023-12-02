@@ -1,0 +1,12 @@
+C:\Users\ediso\Downloads\C#\C1\C1\bin\Debug\C1.dll
+C:\Users\ediso\Downloads\C#\C1\C1\bin\Debug\C1.pdb
+C:\Users\ediso\Downloads\C#\C1\C1\obj\Debug\C1.csproj.AssemblyReference.cache
+C:\Users\ediso\Downloads\C#\C1\C1\obj\Debug\C1.csproj.CoreCompileInputs.cache
+C:\Users\ediso\Downloads\C#\C1\C1\obj\Debug\C1.dll
+C:\Users\ediso\Downloads\C#\C1\C1\obj\Debug\C1.pdb
+C:\Users\ediso\Downloads\OnlyDll\C1\C1\obj\Debug\C1.csproj.AssemblyReference.cache
+C:\Users\ediso\Downloads\OnlyDll\C1\C1\obj\Debug\C1.csproj.CoreCompileInputs.cache
+C:\Users\ediso\Downloads\OnlyDll\C1\C1\obj\Debug\C1.dll
+C:\Users\ediso\Downloads\OnlyDll\C1\C1\obj\Debug\C1.pdb
+C:\Users\ediso\Downloads\OnlyDll\C1\C1\bin\Debug\C1.dll
+C:\Users\ediso\Downloads\OnlyDll\C1\C1\bin\Debug\C1.pdb

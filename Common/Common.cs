@@ -12,9 +12,8 @@ namespace Common
 {
     public class Runnner
     {
-        public static bool RunTestItem(string dllPath)
+        public static bool RunTestItem(string dllPath, object[] R)
         {
-
             Testflow.General.WriteLog("RunTestItem", dllPath);
             object myResult = null;
             Assembly myDll = Assembly.LoadFile(dllPath);
@@ -29,7 +28,9 @@ namespace Common
             }   
 
             try            
-            { myResult = myTest.GetMethod("Run").Invoke(myObj, new object[]{}); }            
+            {
+                myResult = myTest.GetMethod("Run").Invoke(myObj, R); 
+            }            
             catch (Exception ex)
             {
                 Console.WriteLine("Run() Error!!! "+ex.Message); 
@@ -37,7 +38,9 @@ namespace Common
             }   
 
             try            
-            { myTest.GetMethod("UpdateResults").Invoke(myObj, new object[]{}); }           
+            { 
+                myTest.GetMethod("UpdateResults").Invoke(myObj, new object[]{}); 
+            }           
             catch (Exception ex)
             {
                 Console.WriteLine("UpdateResults() Error!!! "+ex.Message); 
@@ -45,7 +48,9 @@ namespace Common
             }   
 
             try            
-            { myTest.GetMethod("TearDown").Invoke(myObj, new object[]{}); }
+            { 
+                myTest.GetMethod("TearDown").Invoke(myObj, new object[]{}); 
+            }
             catch (Exception ex)
             {
                 Console.WriteLine("TearDown() Error!!! "+ex.Message); 
