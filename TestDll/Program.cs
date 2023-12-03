@@ -8,6 +8,7 @@ using System.Management.Automation;             //手動加入參考
 using System.Management.Automation.Runspaces;   //手動加入參考
 using System.Threading;
 using System.Reflection;
+using System.Diagnostics;
 
 namespace TestDll
 {
@@ -16,6 +17,8 @@ namespace TestDll
         // 取得目前的工作目錄
         public static string currentDirectory = Directory.GetCurrentDirectory() + '\\';
         public static string log_file = "TestDll.log";
+        static Stopwatch ItemWatch;
+
         // **** 創建log file ****
         static void CreateDirectoryAndFile()
         {
@@ -80,25 +83,42 @@ namespace TestDll
                 process_log("!!! 找不到 Common.dll");
                 return false;
             }
+            // 启动计时器
+ItemWatch = new Stopwatch();
+ItemWatch.Start();
+
 
             process_log(".... Loading "+dllPath+" ....");
             Object[] p = new object[]{ dllPath, new object[]{}, new object[]{}, new object[]{}, new object[]{} };
             var result = obj.Invoke("RunTestItem",p);
-            // process_log("             Invoke .Setup()");
-            // obj.Invoke("Setup", p);
-            // process_log("             Invoke .Run()");
-            // obj.Invoke("Run", p);
-            // process_log("             Invoke .UpdateResults()");
-            // obj.Invoke("UpdateResults", p);
-            // process_log("             Invoke .TearDown()");
-            // obj.Invoke("TearDown", p);
-            // process_log("             Unload "+dllPath);
+
+// 停止计时器
+ItemWatch.Stop();
+
             AppDomain.Unload(ad);
             obj = null;
             if(result.ToString() == "True") return true;
             else return false;
         }
 
+        static void MonitorExecutionTime(object param)
+        {
+            int timeout = (int)param;
+            // 模拟监测线程的一些工作
+            do
+            {
+                Thread.Sleep(1000); // 每隔一秒输出一次当前执行时间
+                if(ItemWatch.Elapsed.TotalSeconds >= timeout)
+                {
+                    Console.WriteLine($"Elapsed time: {ItemWatch.Elapsed.TotalSeconds} milliseconds");
+                    // // 停止计时器
+                    // ItemWatch.Stop();
+                    // break;
+                }
+                // 添加一些退出条件
+            } while (!(Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Tab));
+            
+        }
 
         // ============== MAIN ==============
 
@@ -110,7 +130,13 @@ namespace TestDll
             startTime = DateTime.Now;
             CreateDirectoryAndFile();
             process_log("<<Step 1>> Run..." + args[0]);
+// 启动一个新线程来监测主程序的执行时间
+object tout = 5;
+Thread monitoringThread = new Thread(new ParameterizedThreadStart(MonitorExecutionTime));
+monitoringThread.Start(tout);
 
+for(int i=0;i<5;i++)
+{
             try
             {
                 result = Execute_dll(currentDirectory + args[0]);
@@ -124,11 +150,18 @@ namespace TestDll
 
             endTime = DateTime.Now;
             timeSpan = endTime - startTime;
-            Console.ReadKey();
+
+
             // 输出时间间隔
             process_log("執行花費時間: " + timeSpan.Minutes + "分鐘 " + timeSpan.Seconds + "秒");
             process_log("=================Completed================");
-            Environment.Exit(0);            
+// 等待监测线程结束
+// monitoringThread.Join();
+// Console.WriteLine($"Main program execution time: {ItemWatch.Elapsed.TotalSeconds} milliseconds");
+            // Console.ReadKey();
+}
+            Environment.Exit(0); 
+
         }
     }
 

@@ -1,0 +1,7 @@
+C:\Users\ediso\Downloads\OnlyDll\Thread\bin\Debug\Thread.exe.config
+C:\Users\ediso\Downloads\OnlyDll\Thread\bin\Debug\Thread.exe
+C:\Users\ediso\Downloads\OnlyDll\Thread\bin\Debug\Thread.pdb
+C:\Users\ediso\Downloads\OnlyDll\Thread\obj\Debug\TT.csproj.AssemblyReference.cache
+C:\Users\ediso\Downloads\OnlyDll\Thread\obj\Debug\TT.csproj.CoreCompileInputs.cache
+C:\Users\ediso\Downloads\OnlyDll\Thread\obj\Debug\Thread.exe
+C:\Users\ediso\Downloads\OnlyDll\Thread\obj\Debug\Thread.pdb

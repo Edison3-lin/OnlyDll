@@ -1,0 +1,2 @@
+C:\Users\ediso\Downloads\OnlyDll\Thread\obj\Debug\Thread.csproj.AssemblyReference.cache
+C:\Users\ediso\Downloads\OnlyDll\Thread\obj\Debug\Thread.csproj.CoreCompileInputs.cache
